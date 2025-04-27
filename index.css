@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: lightgray;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#app-container {
+    background-color: white; 
+    margin: 50px auto;     
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;    
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+header{
+    background-color: royalblue;
+    border-radius: 10px;
+    box-shadow: #4d3291;
+}
+
+h1{
+    font-size: 23px;
+    color: white;
+}
+
+#number-input{
+    width: 20%;
+    color: white;
+    background-color: royalblue;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: lightgray;
+    border-radius: 10%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+::placeholder{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 50%;
+}
+
+#convert-btn{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    border: none;
+}
+
+#convert-btn:hover {
+    background-color: #4d3291;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition-delay: 0.1s;
+}
+
+
+
+.container {
+    padding: 1%;
+    background-color: whitesmoke;
+    margin: 5%;
+    border-radius: 10px;   
+}
+
+h3 {
+   font-size: medium; 
+   color: #4d3291; 
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: lighter;         
+}
