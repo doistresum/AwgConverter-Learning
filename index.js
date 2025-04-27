@@ -27,6 +27,7 @@ convertBtn.addEventListener("click", function() {
     let number = parseFloat(numberInput.value)
     if (isNaN(number) || numberInput.value.trim() === "") {
         alert("Insert a valid number!")
+        numberInput.value = ""
         return
     }
     awgToDiameter(number)
