@@ -8,27 +8,31 @@ convertBtn.addEventListener("click", function() {
     if (numberInput.value.trim() === "00" || numberInput.value.trim() ===  "2/0"){
         diameterEL.innerHTML = `${numberInput.value} AWG = 9.2658 mm`
         areaEL.innerHTML = `${numberInput.value} AWG = 67.4309 mm<sup>2</sup>`
-        inchEL.innerHTML = `${numberInput.value} AWG = 0.3648<sup>in</sup>` 
+        inchEL.innerHTML = `${numberInput.value} AWG = 0.3648<sup>in</sup>`
+        numberInput.value = ""
     }
     else if(numberInput.value.trim() === "000" || numberInput.value.trim() ===  "3/0"){
         diameterEL.innerHTML = `${numberInput.value.trim()} AWG = 10.4049 mm`
         areaEL.innerHTML = `${numberInput.value.trim()} AWG = 85.0288 mm<sup>2</sup>`
-        inchEL.innerHTML = `${numberInput.value.trim()} AWG = 0.4096<sup>in</sup>` 
+        inchEL.innerHTML = `${numberInput.value.trim()} AWG = 0.4096<sup>in</sup>`
+        numberInput.value = ""
     }
     else if(numberInput.value.trim() === "0000" || numberInput.value.trim() ===  "4/0"){
         diameterEL.innerHTML = `${numberInput.value} AWG = 11.6840 mm`
         areaEL.innerHTML = `${numberInput.value} AWG = 107.2193 mm<sup>2</sup>`
-        inchEL.innerHTML = `${numberInput.value} AWG = 0.4600<sup>in</sup>` 
+        inchEL.innerHTML = `${numberInput.value} AWG = 0.4600<sup>in</sup>`
+        numberInput.value = ""
     }
     else{    
-    let number = parseFloat(numberInput.value);
+    let number = parseFloat(numberInput.value)
     if (isNaN(number) || numberInput.value.trim() === "") {
-        alert("Insert a valid number!");
-        return;
+        alert("Insert a valid number!")
+        return
     }
-    awgToDiameter(number);
-    awgToArea(number);
-    mmToInches(number, awgToDiameter(number));
+    awgToDiameter(number)
+    awgToArea(number)
+    mmToInches(number)
+    numberInput.value = ""    
 }});
 
 
